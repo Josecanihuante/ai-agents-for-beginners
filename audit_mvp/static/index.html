@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuditPro AI | Auditoría inteligente para empresas</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">AuditPro AI</div>
+        <div class="nav-links">
+          <a href="#servicios">Servicios</a>
+          <a href="#ml">Análisis ML</a>
+          <a href="/dashboard">Dashboard</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Auditoría + Machine Learning</p>
+          <h1>Transforma tus auditorías con inteligencia predictiva y automatización.</h1>
+          <p>
+            Diseñamos diagnósticos de riesgos, detección de anomalías y software a medida que
+            optimiza procesos críticos. MVP listo para impulsar la toma de decisiones.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#formulario">Solicitar demo</a>
+            <a class="ghost" href="#ml">Ver análisis</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Qué entregamos</h3>
+          <ul>
+            <li>Auditoría continua con criterios de ciberseguridad.</li>
+            <li>Modelos explicables para variables clave.</li>
+            <li>Automatización de controles y reportes.</li>
+            <li>Dashboard ejecutivo con indicadores.</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section id="servicios" class="section">
+      <h2>Servicios de auditoría inteligente</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Auditoría financiera y operativa</h3>
+          <p>Detectamos desviaciones, riesgos y oportunidades con analítica avanzada.</p>
+        </article>
+        <article class="card">
+          <h3>Automatización de procesos</h3>
+          <p>Implementamos software para acelerar controles, conciliaciones y reportes.</p>
+        </article>
+        <article class="card">
+          <h3>Seguridad y cumplimiento</h3>
+          <p>Arquitectura segura, trazabilidad y mejores prácticas alineadas a SOLID.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="ml" class="section alt">
+      <div class="section-header">
+        <div>
+          <h2>Análisis con ML explicable</h2>
+          <p>
+            Sube un archivo Excel y define la variable objetivo. Si incluyes una variable de
+            tiempo ejecutamos un modelo autoregresivo; si no, una regresión lineal interpretativa.
+          </p>
+        </div>
+        <div class="badge">MVP seguro</div>
+      </div>
+      <div class="ml-panel" id="formulario">
+        <form id="ml-form" class="form">
+          <div class="form-group">
+            <label for="company">Empresa</label>
+            <input id="company" name="company" type="text" placeholder="Nombre de la empresa" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo corporativo</label>
+            <input id="email" name="email" type="email" placeholder="correo@empresa.com" required />
+          </div>
+          <div class="form-group">
+            <label for="file">Archivo Excel o CSV</label>
+            <input id="file" name="file" type="file" accept=".xlsx,.xls,.csv" required />
+          </div>
+          <div class="form-group">
+            <label for="target">Variable a explicar</label>
+            <input id="target" name="target" type="text" placeholder="ej: gasto_total" required />
+          </div>
+          <div class="form-group">
+            <label for="features">Variables explicativas (separadas por coma)</label>
+            <input id="features" name="features" type="text" placeholder="ej: ingresos, headcount" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Variable de tiempo (opcional)</label>
+            <input id="time" name="time" type="text" placeholder="ej: fecha" />
+          </div>
+          <div class="form-group">
+            <label for="periods">Períodos a proyectar</label>
+            <input id="periods" name="periods" type="number" min="1" max="6" value="2" />
+          </div>
+          <button class="primary" type="submit">Ejecutar análisis</button>
+          <p class="helper">Tus datos se procesan en memoria y nunca se almacenan.</p>
+        </form>
+        <div class="ml-results" id="ml-results">
+          <h3>Resumen del análisis</h3>
+          <div id="ml-output" class="output"></div>
+          <a class="primary" href="/dashboard">Ir al dashboard</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Diseño robusto y seguro</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Principios SOLID</h3>
+          <p>Servicios desacoplados, validación modular y evolución segura del modelo.</p>
+        </article>
+        <article class="card">
+          <h3>Ciberseguridad por defecto</h3>
+          <p>Cabeceras seguras, límites de carga y políticas de aislamiento.</p>
+        </article>
+        <article class="card">
+          <h3>Dashboard ejecutivo</h3>
+          <p>Indicadores claros para decisiones estratégicas y seguimiento continuo.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 AuditPro AI. Auditoría inteligente para empresas.</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

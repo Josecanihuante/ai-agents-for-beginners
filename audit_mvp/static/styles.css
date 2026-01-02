@@ -1,0 +1,253 @@
+:root {
+  color-scheme: light;
+  --primary: #0f4c81;
+  --secondary: #0b2e4f;
+  --accent: #f5b335;
+  --bg: #f7f9fc;
+  --text: #0b1f33;
+  --muted: #5c6b7a;
+  --white: #ffffff;
+  --border: #e0e6ed;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0f4c81 0%, #0b2e4f 60%);
+  color: var(--white);
+  padding-bottom: 3rem;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 3rem 2rem;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.hero-card ul {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primary,
+.ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--secondary);
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.section {
+  padding: 3.5rem 3rem;
+}
+
+.section.alt {
+  background: var(--white);
+}
+
+.section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(15, 76, 129, 0.08);
+}
+
+.card.highlight {
+  text-align: center;
+  background: var(--bg);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form input {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.ml-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.ml-results {
+  background: var(--bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  display: none;
+}
+
+.ml-results.active {
+  display: block;
+}
+
+.output {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: var(--accent);
+  color: var(--secondary);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.helper {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+}
+
+.dashboard-hero {
+  background: var(--secondary);
+  color: var(--white);
+  padding-bottom: 2rem;
+}
+
+.dashboard-header {
+  padding: 0 3rem 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .section,
+  .nav,
+  .hero-content,
+  .dashboard-header {
+    padding: 2.5rem 1.5rem;
+  }
+}

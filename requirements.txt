@@ -20,6 +20,9 @@ python-dotenv
 pandas
 uvicorn
 nest-asyncio
+fastapi
+python-multipart
+openpyxl
 
 agent-framework
 

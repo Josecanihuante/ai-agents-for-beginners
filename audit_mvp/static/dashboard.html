@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuditPro AI | Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="dashboard-hero">
+      <nav class="nav">
+        <div class="logo">AuditPro AI</div>
+        <div class="nav-links">
+          <a href="/">Landing</a>
+          <a href="/dashboard">Dashboard</a>
+        </div>
+      </nav>
+      <div class="dashboard-header">
+        <h1>Dashboard Ejecutivo</h1>
+        <p>Resultados del análisis y estado de cumplimiento de auditoría.</p>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="grid">
+        <article class="card highlight">
+          <h3>Estado del modelo</h3>
+          <p id="model-status">Sin análisis reciente.</p>
+        </article>
+        <article class="card highlight">
+          <h3>Filas evaluadas</h3>
+          <p id="row-count">--</p>
+        </article>
+        <article class="card highlight">
+          <h3>Modo de análisis</h3>
+          <p id="mode">--</p>
+        </article>
+      </div>
+
+      <section class="section alt">
+        <h2>Detalle del análisis</h2>
+        <div id="detail" class="output"></div>
+      </section>
+
+      <section class="section">
+        <h2>Recomendaciones de optimización</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Automatización</h3>
+            <p>Identificar tareas repetitivas y orquestarlas con flujos de trabajo.</p>
+          </article>
+          <article class="card">
+            <h3>Monitoreo continuo</h3>
+            <p>Definir indicadores clave y alertas tempranas de desviaciones.</p>
+          </article>
+          <article class="card">
+            <h3>Plan de acción</h3>
+            <p>Priorizar acciones según impacto financiero y operacional.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Para más información escribe a contacto@auditpro.ai</p>
+    </footer>
+
+    <script src="/static/dashboard.js"></script>
+  </body>
+</html>
